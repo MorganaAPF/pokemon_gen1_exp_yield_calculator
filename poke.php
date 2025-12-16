@@ -31,6 +31,7 @@
         $yield = $array["base_exp_yield"];
     ?>
     <div id="php1">
+        <div id="halfbutton1"></div>
         <?php 
             // Fazendo o cálculo e mostrando o resultado
             $exp_float = (($yield * $level) / 7) * (1 / $split) * $battle * $trade;
@@ -43,5 +44,6 @@
     <div id="php2">
         <a href="javascript:history.go(-1)">Previous page</a>
     </div>
+        <div id="halfbutton2"></div>
 </body>
 </html>

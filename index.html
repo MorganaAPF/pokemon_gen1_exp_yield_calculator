@@ -9,190 +9,192 @@
 <body>
     <main>
         <h1>Experience yield calculator</h1>
-        <div id="form">
-            <form action="poke.php" method="get">
-                <p id="pokemon">
-                    <label for="idpokemon" id="labelpokemon">Enemy Pokémon: </label>
-                    <select name="enemy_pokemon" id="idpokemon">
-                        <option value="001">BULBASAUR</option>
-                        <option value="002">IVYSAUR</option>
-                        <option value="003">VENUSAUR</option>
-                        <option value="004">CHARMANDER</option>
-                        <option value="005">CHARMELEON</option>
-                        <option value="006">CHARIZARD</option>
-                        <option value="007">SQUIRTLE</option>
-                        <option value="008">WARTORTLE</option>
-                        <option value="009">BLASTOISE</option>
-                        <option value="010">CATERPIE</option>
-                        <option value="011">METAPOD</option>
-                        <option value="012">BUTTERFREE</option>
-                        <option value="013">WEEDLE</option>
-                        <option value="014">KAKUNA</option>
-                        <option value="015">BEEDRILL</option>
-                        <option value="016">PIDGEY</option>
-                        <option value="017">PIDGEOTTO</option>
-                        <option value="018">PIDGEOT</option>
-                        <option value="019">RATTATA</option>
-                        <option value="020">RATICATE</option>
-                        <option value="021">SPEAROW</option>
-                        <option value="022">FEAROW</option>
-                        <option value="023">EKANS</option>
-                        <option value="024">ARBOK</option>
-                        <option value="025">PIKACHU</option>
-                        <option value="026">RAICHU</option>
-                        <option value="027">SANDSHREW</option>
-                        <option value="028">SANDSLASH</option>
-                        <option value="029">NIDORAN-F</option>
-                        <option value="030">NIDORINA</option>
-                        <option value="031">NIDOQUEEN</option>
-                        <option value="032">NIDORAN-M</option>
-                        <option value="033">NIDORINO</option>
-                        <option value="034">NIDOKING</option>
-                        <option value="035">CLEFAIRY</option>
-                        <option value="036">CLEFABLE</option>
-                        <option value="037">VULPIX</option>
-                        <option value="038">NINETALES</option>
-                        <option value="039">JIGGLYPUFF</option>
-                        <option value="040">WIGGLYTUFF</option>
-                        <option value="041">ZUBAT</option>
-                        <option value="042">GOLBAT</option>
-                        <option value="043">ODDISH</option>
-                        <option value="044">GLOOM</option>
-                        <option value="045">VILEPLUME</option>
-                        <option value="046">PARAS</option>
-                        <option value="047">PARASECT</option>
-                        <option value="048">VENONAT</option>
-                        <option value="049">VENOMOTH</option>
-                        <option value="050">DIGLETT</option>
-                        <option value="051">DUGTRIO</option>
-                        <option value="052">MEOWTH</option>
-                        <option value="053">PERSIAN</option>
-                        <option value="054">PSYDUCK</option>
-                        <option value="055">GOLDUCK</option>
-                        <option value="056">MANKEY</option>
-                        <option value="057">PRIMEAPE</option>
-                        <option value="058">GROWLITHE</option>
-                        <option value="059">ARCANINE</option>
-                        <option value="060">POLIWAG</option>
-                        <option value="061">POLIWHIRL</option>
-                        <option value="062">POLIWRATH</option>
-                        <option value="063">ABRA</option>
-                        <option value="064">KADABRA</option>
-                        <option value="065">ALAKAZAM</option>
-                        <option value="066">MACHOP</option>
-                        <option value="067">MACHOKE</option>
-                        <option value="068">MACHAMP</option>
-                        <option value="069">BELLSPROUT</option>
-                        <option value="070">WEEPINBELL</option>
-                        <option value="071">VICTREEBEL</option>
-                        <option value="072">TENTACOOL</option>
-                        <option value="073">TENTACRUEL</option>
-                        <option value="074">GEODUDE</option>
-                        <option value="075">GRAVELER</option>
-                        <option value="076">GOLEM</option>
-                        <option value="077">PONYTA</option>
-                        <option value="078">RAPIDASH</option>
-                        <option value="079">SLOWPOKE</option>
-                        <option value="080">SLOWBRO</option>
-                        <option value="081">MAGNEMITE</option>
-                        <option value="082">MAGNETON</option>
-                        <option value="083">FARFETCH'D</option>
-                        <option value="084">DODUO</option>
-                        <option value="085">DODRIO</option>
-                        <option value="086">SEEL</option>
-                        <option value="087">DEWGONG</option>
-                        <option value="088">GRIMER</option>
-                        <option value="089">MUK</option>
-                        <option value="090">SHELLDER</option>
-                        <option value="091">CLOYSTER</option>
-                        <option value="092">GASTLY</option>
-                        <option value="093">HAUNTER</option>
-                        <option value="094">GENGAR</option>
-                        <option value="095">ONIX</option>
-                        <option value="096">DROWZEE</option>
-                        <option value="097">HYPNO</option>
-                        <option value="098">KRABBY</option>
-                        <option value="099">KINGLER</option>
-                        <option value="100">VOLTORB</option>
-                        <option value="101">ELECTRODE</option>
-                        <option value="102">EXEGGCUTE</option>
-                        <option value="103">EXEGGUTOR</option>
-                        <option value="104">CUBONE</option>
-                        <option value="105">MAROWAK</option>
-                        <option value="106">HITMONLEE</option>
-                        <option value="107">HITMONCHAN</option>
-                        <option value="108">LICKITUNG</option>
-                        <option value="109">KOFFING</option>
-                        <option value="110">WEEZING</option>
-                        <option value="111">RHYHORN</option>
-                        <option value="112">RHYDON</option>
-                        <option value="113">CHANSEY</option>
-                        <option value="114">TANGELA</option>
-                        <option value="115">KANGASKHAN</option>
-                        <option value="116">HORSEA</option>
-                        <option value="117">SEADRA</option>
-                        <option value="118">GOLDEEN</option>
-                        <option value="119">SEAKING</option>
-                        <option value="120">STARYU</option>
-                        <option value="121">STARMIE</option>
-                        <option value="122">MR.MIME</option>
-                        <option value="123">SCYTHER</option>
-                        <option value="124">JYNX</option>
-                        <option value="125">ELECTABUZZ</option>
-                        <option value="126">MAGMAR</option>
-                        <option value="127">PINSIR</option>
-                        <option value="128">TAUROS</option>
-                        <option value="129">MAGIKARP</option>
-                        <option value="130">GYARADOS</option>
-                        <option value="131">LAPRAS</option>
-                        <option value="132">DITTO</option>
-                        <option value="133">EEVEE</option>
-                        <option value="134">VAPOREON</option>
-                        <option value="135">JOLTEON</option>
-                        <option value="136">FLAREON</option>
-                        <option value="137">PORYGON</option>
-                        <option value="138">OMANYTE</option>
-                        <option value="139">OMASTAR</option>
-                        <option value="140">KABUTO</option>
-                        <option value="141">KABUTOPS</option>
-                        <option value="142">AERODACTYL</option>
-                        <option value="143">SNORLAX</option>
-                        <option value="144">ARTICUNO</option>
-                        <option value="145">ZAPDOS</option>
-                        <option value="146">MOLTRES</option>
-                        <option value="147">DRATINI</option>
-                        <option value="148">DRAGONAIR</option>
-                        <option value="149">DRAGONITE</option>
-                        <option value="150">MEWTWO</option>
-                        <option value="151">MEW</option>
-                    </select>
-                </p>
-                <p id="level">
-                    <label for="idlevel" id="labellevel">Enemy Pokémon's level</label>
-                    <input type="number" name="level" id="idlevel" max="100" required>
-                </p>
-                <p id="split">
-                    <label for="idsplit" id="labelsplit">Number of Pokémon to receive exp: </label>
-                    <select name="split" id="idsplit" required>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                    </select>
-                </p>
-                <div id="battle">
-                    <div>
-                        <input type="radio" id="wild" name="battle" value="1" required>
-                        <label for="wild">Wild battle</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="trainer" name="battle" value="1.5" required>
-                        <label for="trainer">Trainer battle</label>
-                    </div>
+        <form action="poke.php" method="get">
+            <p id="button"><input type="submit" value=""></p>
+            <div id="form">
+                <div id="paragraphs">
+                    <p id="pokemon">
+                        <label for="idpokemon" id="labelpokemon">Enemy Pokémon: </label>
+                        <select name="enemy_pokemon" id="idpokemon">
+                            <option value="001">BULBASAUR</option>
+                            <option value="002">IVYSAUR</option>
+                            <option value="003">VENUSAUR</option>
+                            <option value="004">CHARMANDER</option>
+                            <option value="005">CHARMELEON</option>
+                            <option value="006">CHARIZARD</option>
+                            <option value="007">SQUIRTLE</option>
+                            <option value="008">WARTORTLE</option>
+                            <option value="009">BLASTOISE</option>
+                            <option value="010">CATERPIE</option>
+                            <option value="011">METAPOD</option>
+                            <option value="012">BUTTERFREE</option>
+                            <option value="013">WEEDLE</option>
+                            <option value="014">KAKUNA</option>
+                            <option value="015">BEEDRILL</option>
+                            <option value="016">PIDGEY</option>
+                            <option value="017">PIDGEOTTO</option>
+                            <option value="018">PIDGEOT</option>
+                            <option value="019">RATTATA</option>
+                            <option value="020">RATICATE</option>
+                            <option value="021">SPEAROW</option>
+                            <option value="022">FEAROW</option>
+                            <option value="023">EKANS</option>
+                            <option value="024">ARBOK</option>
+                            <option value="025">PIKACHU</option>
+                            <option value="026">RAICHU</option>
+                            <option value="027">SANDSHREW</option>
+                            <option value="028">SANDSLASH</option>
+                            <option value="029">NIDORAN-F</option>
+                            <option value="030">NIDORINA</option>
+                            <option value="031">NIDOQUEEN</option>
+                            <option value="032">NIDORAN-M</option>
+                            <option value="033">NIDORINO</option>
+                            <option value="034">NIDOKING</option>
+                            <option value="035">CLEFAIRY</option>
+                            <option value="036">CLEFABLE</option>
+                            <option value="037">VULPIX</option>
+                            <option value="038">NINETALES</option>
+                            <option value="039">JIGGLYPUFF</option>
+                            <option value="040">WIGGLYTUFF</option>
+                            <option value="041">ZUBAT</option>
+                            <option value="042">GOLBAT</option>
+                            <option value="043">ODDISH</option>
+                            <option value="044">GLOOM</option>
+                            <option value="045">VILEPLUME</option>
+                            <option value="046">PARAS</option>
+                            <option value="047">PARASECT</option>
+                            <option value="048">VENONAT</option>
+                            <option value="049">VENOMOTH</option>
+                            <option value="050">DIGLETT</option>
+                            <option value="051">DUGTRIO</option>
+                            <option value="052">MEOWTH</option>
+                            <option value="053">PERSIAN</option>
+                            <option value="054">PSYDUCK</option>
+                            <option value="055">GOLDUCK</option>
+                            <option value="056">MANKEY</option>
+                            <option value="057">PRIMEAPE</option>
+                            <option value="058">GROWLITHE</option>
+                            <option value="059">ARCANINE</option>
+                            <option value="060">POLIWAG</option>
+                            <option value="061">POLIWHIRL</option>
+                            <option value="062">POLIWRATH</option>
+                            <option value="063">ABRA</option>
+                            <option value="064">KADABRA</option>
+                            <option value="065">ALAKAZAM</option>
+                            <option value="066">MACHOP</option>
+                            <option value="067">MACHOKE</option>
+                            <option value="068">MACHAMP</option>
+                            <option value="069">BELLSPROUT</option>
+                            <option value="070">WEEPINBELL</option>
+                            <option value="071">VICTREEBEL</option>
+                            <option value="072">TENTACOOL</option>
+                            <option value="073">TENTACRUEL</option>
+                            <option value="074">GEODUDE</option>
+                            <option value="075">GRAVELER</option>
+                            <option value="076">GOLEM</option>
+                            <option value="077">PONYTA</option>
+                            <option value="078">RAPIDASH</option>
+                            <option value="079">SLOWPOKE</option>
+                            <option value="080">SLOWBRO</option>
+                            <option value="081">MAGNEMITE</option>
+                            <option value="082">MAGNETON</option>
+                            <option value="083">FARFETCH'D</option>
+                            <option value="084">DODUO</option>
+                            <option value="085">DODRIO</option>
+                            <option value="086">SEEL</option>
+                            <option value="087">DEWGONG</option>
+                            <option value="088">GRIMER</option>
+                            <option value="089">MUK</option>
+                            <option value="090">SHELLDER</option>
+                            <option value="091">CLOYSTER</option>
+                            <option value="092">GASTLY</option>
+                            <option value="093">HAUNTER</option>
+                            <option value="094">GENGAR</option>
+                            <option value="095">ONIX</option>
+                            <option value="096">DROWZEE</option>
+                            <option value="097">HYPNO</option>
+                            <option value="098">KRABBY</option>
+                            <option value="099">KINGLER</option>
+                            <option value="100">VOLTORB</option>
+                            <option value="101">ELECTRODE</option>
+                            <option value="102">EXEGGCUTE</option>
+                            <option value="103">EXEGGUTOR</option>
+                            <option value="104">CUBONE</option>
+                            <option value="105">MAROWAK</option>
+                            <option value="106">HITMONLEE</option>
+                            <option value="107">HITMONCHAN</option>
+                            <option value="108">LICKITUNG</option>
+                            <option value="109">KOFFING</option>
+                            <option value="110">WEEZING</option>
+                            <option value="111">RHYHORN</option>
+                            <option value="112">RHYDON</option>
+                            <option value="113">CHANSEY</option>
+                            <option value="114">TANGELA</option>
+                            <option value="115">KANGASKHAN</option>
+                            <option value="116">HORSEA</option>
+                            <option value="117">SEADRA</option>
+                            <option value="118">GOLDEEN</option>
+                            <option value="119">SEAKING</option>
+                            <option value="120">STARYU</option>
+                            <option value="121">STARMIE</option>
+                            <option value="122">MR.MIME</option>
+                            <option value="123">SCYTHER</option>
+                            <option value="124">JYNX</option>
+                            <option value="125">ELECTABUZZ</option>
+                            <option value="126">MAGMAR</option>
+                            <option value="127">PINSIR</option>
+                            <option value="128">TAUROS</option>
+                            <option value="129">MAGIKARP</option>
+                            <option value="130">GYARADOS</option>
+                            <option value="131">LAPRAS</option>
+                            <option value="132">DITTO</option>
+                            <option value="133">EEVEE</option>
+                            <option value="134">VAPOREON</option>
+                            <option value="135">JOLTEON</option>
+                            <option value="136">FLAREON</option>
+                            <option value="137">PORYGON</option>
+                            <option value="138">OMANYTE</option>
+                            <option value="139">OMASTAR</option>
+                            <option value="140">KABUTO</option>
+                            <option value="141">KABUTOPS</option>
+                            <option value="142">AERODACTYL</option>
+                            <option value="143">SNORLAX</option>
+                            <option value="144">ARTICUNO</option>
+                            <option value="145">ZAPDOS</option>
+                            <option value="146">MOLTRES</option>
+                            <option value="147">DRATINI</option>
+                            <option value="148">DRAGONAIR</option>
+                            <option value="149">DRAGONITE</option>
+                            <option value="150">MEWTWO</option>
+                            <option value="151">MEW</option>
+                        </select>
+                    </p>
+                    <p id="level">
+                        <label for="idlevel" id="labellevel">Enemy Pokémon's level</label>
+                        <input type="number" name="level" id="idlevel" max="100" min="1" required>
+                    </p>
+                    <p id="split">
+                        <label for="idsplit" id="labelsplit">Number of Pokémon to receive exp: </label>
+                        <select name="split" id="idsplit" required>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                    </p>
+                    <div id="battle">
+                        <div>
+                            <input type="radio" id="wild" name="battle" value="1" required>
+                            <label for="wild">Wild battle</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="trainer" name="battle" value="1.5" required>
+                            <label for="trainer">Trainer battle</label>
+                        </div>
                 </div>
-                <p id="buttom"><input type="submit" value="Submit" id="submit"></p>
+                </div>
             </form>
         </div>
     </main>
